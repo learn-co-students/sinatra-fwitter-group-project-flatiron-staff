@@ -1,0 +1,9 @@
+<h1>Tweets</h1>
+
+<h2>Welcome, <%=Helpers.current_user(session).username%></h2>
+
+<ul>
+<%@tweets.each do |t|%>
+	<li><%=t.content%></li>
+<%end%>
+</ul>
